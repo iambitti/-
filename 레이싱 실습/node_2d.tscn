@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt313wg2imqoo"]
+
+[ext_resource type="PackedScene" uid="uid://clslwlj67dxlr" path="res://씬들의모임/흐르는배.tscn" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="흐르는배" parent="." instance=ExtResource("1_wtcfe")]

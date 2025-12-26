@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://clslwlj67dxlr"]
+
+[ext_resource type="Texture2D" uid="uid://bvq2vnfqqun5t" path="res://Godot Engine 으로 시작하는 첫 게임 개발 - 레이싱 게임 제작 자료/background.png" id="1_d4mtb"]
+[ext_resource type="Script" uid="uid://ct1wutv4q56rp" path="res://씬들의모임/흐르는배.gd" id="1_vf5k7"]
+
+[node name="흐르는배" type="ParallaxBackground"]
+script = ExtResource("1_vf5k7")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(0, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+scale = Vector2(4, 4)
+texture = ExtResource("1_d4mtb")
+centered = false

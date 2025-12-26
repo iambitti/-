@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://0oh52a3xb3eh"]
+
+[ext_resource type="PackedScene" uid="uid://clslwlj67dxlr" path="res://씬들의모임/흐르는배.tscn" id="1_rvwm5"]
+[ext_resource type="PackedScene" uid="uid://ded2kl6oitv73" path="res://씬들의모임/부.tscn" id="2_y553n"]
+
+[node name="레이싱" type="Node2D"]
+
+[node name="흐르는배" parent="." instance=ExtResource("1_rvwm5")]
+
+[node name="부릉" parent="흐르는배" instance=ExtResource("2_y553n")]
+position = Vector2(516, 1941)
